@@ -1,0 +1,264 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    color: rgb(72, 72, 72);
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    background-color: rgba(241, 241, 241, 0.295);
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+}
+
+
+.leftNav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.rigthNav{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 350px;
+}
+
+li{
+    list-style:none;
+}
+
+.logo{
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.userPhotoCont{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    
+}
+
+.userPhoto{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.productContainer{
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.productChild{
+    display: flex;
+    width: 80%;
+    height: 80vh;
+}
+
+.left{
+    padding: 3% 0% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainImg{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 70%;
+    height: 70%;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+}
+.mainImgProduct{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+}
+
+
+.imgs{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 70%;
+    height: auto;
+}
+
+
+.productimgCont{
+    width:23%;
+    height: 80%;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+
+.productoImg{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    transition: color  1s;
+    cursor: pointer;
+}
+
+.productoImg:hover{
+    filter: brightness(50%);
+}
+
+.rigth{
+    display: flex;
+    padding: 5% 3% 0% 1%;
+    align-items: stretch;
+    width: 55%;
+    height: 100%;
+}
+
+.text{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.description{
+    display: flex;
+    width: 80%;
+}
+
+.title > span {
+    font-weight: 600;
+    font-size: 16pt;
+    color: rgb(50, 50, 50);
+
+}
+
+.title > :last-child {
+    font-size: 45pt;
+    font-weight: 900;
+    color: black;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20%;
+}
+
+.price  > div{
+    border-radius: 5px;
+    margin: 5px 5px 0px 0px ;
+}
+.currentPrice{
+    font-size: 20pt;
+    font-weight: 800;
+}
+.discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 10pt;
+    background-color: rgb(100, 100, 100);
+    color: rgb(234, 234, 234);
+}
+
+.lastprice{
+    font-size: 16pt;
+    font-weight: 400;
+    color: rgb(174, 174, 174);
+    text-decoration:line-through;
+}
+
+.buttons{
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+
+}
+
+
+.buttonIncrement{
+    height: 5vh;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    font-size: 16pt;
+    padding: 1.5% 3% 1.5% 3%;
+    border-radius: 4px;
+    font-weight: 400;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(149, 149, 149, 0.163);
+}
+
+.buttonIncrement  button{
+    border-style: none;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+    font-size: 18pt;
+    font-weight: 800;
+    color: rgb(32, 32, 32);
+    
+
+}
+
+.buttonAddCart{
+    width: 58%;
+    height: 100%;
+    font-size: 16pt;
+    padding: 1.5% 3% 1.5% 3%;
+    border-radius: 8px;
+    font-weight: 400;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(149, 149, 149);
+}
+
+.fa-shop{
+    margin-right: 10px;
+}
